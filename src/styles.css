@@ -1,0 +1,10 @@
+/* Add application styles & imports to this file! */
+.flex
+{
+  display: flex;
+}
+
+.center-flex
+{
+  justify-content: center;
+}

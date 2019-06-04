@@ -1,0 +1,13 @@
+<div>
+  <input class="rounded" type="text" placeholder="Search" (keyup)="OnChange($event)" >
+</div>
+<div class="flex" [ngStyle]="{'height.px': 250}">
+  <section id="Logs">
+    <ul *ngIf="SearchTerm">
+      <li *ngFor="let value of (todoQuery.search(SearchTerm) | async)">{{value.text | truncate : 25 : true}}</li>
+    </ul>
+    <ul *ngIf="!SearchTerm">
+      <li *ngFor="let value of (todoQuery.get$ | async)">{{value.text | truncate : 25 : true}}</li>
+    </ul>
+  </section>
+</div>

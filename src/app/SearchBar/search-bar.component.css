@@ -1,0 +1,7 @@
+.rounded
+{
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid gray;
+}
